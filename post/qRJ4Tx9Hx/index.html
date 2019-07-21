@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>[数通]&lt;实验报告&gt;配置Console用户界面的认证方式 | Swm Capsule</title>
+<meta name="description" content="小さな宝物 持っていたのに，どうして忘れちゃうの？ もう触ってない。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://bi9swm.github.io/favicon.ico?v=1563696680605">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://bi9swm.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://bi9swm.github.io">
+        <img src="https://bi9swm.github.io/images/avatar.png?v=1563696680605" class="site-logo">
+        <h1 class="site-title">Swm Capsule</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://bi9swm.github.io" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://bi9swm.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      小さな宝物 持っていたのに，どうして忘れちゃうの？ もう触ってない。
+    </div>
+    <div class="site-footer">
+      Powered by Bi9swm | <a class="rss" href="https://bi9swm.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">[数通]&lt;实验报告&gt;配置Console用户界面的认证方式</h2>
+            <div class="post-date">2019-07-21</div>
+            
+            <div class="post-content">
+              <p><strong>实验环境：eNSP模拟器下运行</strong></p>
+<ol>
+<li>AAA认证</li>
+</ol>
+<pre><code>[Huawei]user-interface console 0
+[Huawei-ui-console0]authentication-mode aaa
+
+[Huawei]aaa
+[Huawei-aaa]local-user admin password cipher admin
+[Huawei-aaa]local-user admin service-type 
+[Huawei-aaa]local-user admin service-type terminal
+</code></pre>
+<ol start="2">
+<li>Password认证</li>
+</ol>
+<pre><code>[Huawei]user-interface console 0
+[Huawei-ui-console0]authentication-mode password 
+[Huawei-ui-console0]set authentication password cipher admin
+</code></pre>
+<ol start="3">
+<li>none 无认证</li>
+</ol>
+<pre><code>[Huawei]user-interface console 0
+[Huawei-ui-console0]authentication-mode none
+</code></pre>
+<p>相关链接：<a href="https://support.huawei.com/enterprise/zh/doc/EDOC1000178156/9f589c52">Huawei-文档中心：交换机配置手册</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://bi9swm.github.io/tag/p5P2LctvN" class="tag">
+                    数通
+                  </a>
+                
+                  <a href="https://bi9swm.github.io/tag/rW28CbAft" class="tag">
+                    实验报告
+                  </a>
+                
+                  <a href="https://bi9swm.github.io/tag/DyCPOj2ly" class="tag">
+                    Huawei
+                  </a>
+                
+                  <a href="https://bi9swm.github.io/tag/QYRVzo2cr" class="tag">
+                    认证
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
