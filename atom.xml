@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bi9swm.github.io</id>
     <title>Swm Capsule</title>
-    <updated>2019-07-21T08:11:22.336Z</updated>
+    <updated>2019-12-21T08:19:40.900Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bi9swm.github.io"/>
     <link rel="self" href="https://bi9swm.github.io/atom.xml"/>
@@ -29,6 +29,6 @@
         <id>https://bi9swm.github.io/post/qRJ4Tx9Hx</id>
         <link href="https://bi9swm.github.io/post/qRJ4Tx9Hx">
         </link>
-        <updated>2019-07-21T07:54:13.000Z</updated>
+        <updated>2019-07-12T02:23:13.000Z</updated>
     </entry>
 </feed>
